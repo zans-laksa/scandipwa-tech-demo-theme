@@ -1,0 +1,17 @@
+.Menu {
+    &-Item {
+        @include tablet-portrait {
+            padding: 0 1rem;
+        }
+    }
+
+    &-MenuWrapper {
+        @include after-mobile {
+            z-index: 20;
+        }
+
+        @media screen and (min-width: 1330px) {
+            z-index: initial;
+        }
+    }
+}

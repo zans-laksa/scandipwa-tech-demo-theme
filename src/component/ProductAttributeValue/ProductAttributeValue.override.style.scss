@@ -1,0 +1,7 @@
+.ProductAttributeValue {
+    height: calc(var(--option-size) + 3px);
+
+    &-Image {
+        margin-top: 1px;
+    }
+}

@@ -1,0 +1,27 @@
+:root {
+    @include after-mobile {
+        --header-top-menu-height: 35px;
+    }
+}
+
+.Header {
+    &-LogoWrapper {
+        padding-top: 7px;
+        .Image {
+            .Image-Image {
+                object-fit: contain;
+            }
+        }
+    }
+
+    &-Nav {
+        @include after-mobile {
+            top: -40px;
+            z-index: 22;
+        }
+
+        @media screen and (min-width: 1330px) {
+            top: 0;
+        }
+    }
+}
