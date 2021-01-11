@@ -15,6 +15,7 @@ export class Header extends SourceHeader {
         title: this.renderTitle.bind(this),
         account: this.renderAccount.bind(this),
         minicart: this.renderMinicart.bind(this),
+        compare: this.renderComparePageButton.bind(this),
         search: this.renderSearchField.bind(this),
         clear: this.renderClearButton.bind(this),
         edit: this.renderEditButton.bind(this),
